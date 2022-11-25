@@ -8,5 +8,28 @@
   </head>
   <body>
     <h1>Onglets</h1>
+    <div id="onglets" x-data="{
+      ouvert : 1,
+     }">
+     <ul role="tablist">
+      <li role="tab">Onglet 1</li>
+      <li role="tab">Onglet 2</li>
+      <li role="tab">Onglet 3</li>
+     </ul>
+     <div>
+      <div role="tabpanel" x-show="ouvert === 1">
+        <h1>Panneau 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error omnis, doloremque in perferendis sapiente deleniti delectus ab aut! Nesciunt asperiores exercitationem ipsum! Facere impedit placeat possimus non fugiat eligendi. Dolorem.</p>
+      </div>
+      <div role="tabpanel" x-show="ouvert === 2">
+        <h1>Panneau 2</h1>
+        <p>Nesciunt ut voluptatum nemo rerum aliquid ducimus expedita ullam quod porro perferendis? Dolorem omnis tenetur voluptas quia suscipit, atque quibusdam minus? Inventore asperiores non laborum eum nulla saepe porro repellendus!</p>
+      </div>
+      <div role="tabpanel" x-show="ouvert === 3">
+        <h1>Panneau 3</h1>
+        <p>Quos facilis natus repellat officia ad. Ex vero incidunt neque, mollitia fuga vel omnis quam eveniet et expedita magnam vitae! Mollitia tempore, aspernatur optio quasi aliquam alias accusantium reiciendis expedita.</p>
+      </div>
+     </div>
+
   </body>
 </html>
