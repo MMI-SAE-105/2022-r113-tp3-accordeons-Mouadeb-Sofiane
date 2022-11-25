@@ -11,7 +11,7 @@
   <body>
     <h1>Accordéon horizontal</h1>
     <ul id="accordeon">
-      <li>
+      <li :class="{actif:isOpen === 1,}" @click="">
         <figure>
           <img src="" alt="" width="102">
           <figcaption>
@@ -20,7 +20,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li :class="{actif:isOpen === 1,}">
         <figure>
           <img src="" alt="" width="102">
           <figcaption>
@@ -28,7 +28,7 @@
             <p>Dolorum reprehenderit magni enim totam rem!</p>
           </figcaption>
         </figure>
-      </li>
+      </li :class="{actif:isOpen === 1,}">
       <li>
         <figure>
           <img src="" alt="" width="102">
